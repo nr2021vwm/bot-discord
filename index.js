@@ -9,6 +9,7 @@ const all = require('./command/all');
  // lobby folder
 const join = require('./lobby/join');
 const left = require('./lobby/left');
+const ls = require('./lobby/lobby-console');
 
 client.on("ready", message => {
     console.log("discord-bot login");
@@ -25,6 +26,7 @@ all(client)
 
 join(client)
 left(client)
+ls(client)
 });
 
 client.login(process.env.token);
