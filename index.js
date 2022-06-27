@@ -12,7 +12,7 @@ const left = require('./lobby/left');
 const ls = require('./lobby/lobby-console');
 
 client.on("ready", message => {
-    console.log("discord-bot login");
+    console.log(`${client.user.tag} token login now`);
  client.user.setPresence({
     status: 'idel',
     activity: {
