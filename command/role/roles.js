@@ -44,7 +44,7 @@ client.on('message', async message => {
  message.channel.send(embed)
  }
 
- if (command === "r_admin")
+ if (command === "r_admin") {
   message.member.roles.add('000000000000000000')
    const embed = new MessageEmbed()
    .setColor('RED')
@@ -52,6 +52,8 @@ client.on('message', async message => {
    .setDescription('**Admin** roleを**削除**しました。')
 
  message.channel.send(embed)
+ }
+ 
  });
 
 };
