@@ -2,9 +2,12 @@ const discord = require('discord.js');
 require('dotenv').config();
 const client = new discord.Client;
 
- // command folder
-const help = require('./command/help');
-const all = require('./command/all');
+ // general folder
+const help = require('./command/general/help');
+const all = require('./command/general/all');
+
+ // role folder
+const member = require('./command/role/roles');
 
  // lobby folder
 const join = require('./lobby/join');
@@ -23,6 +26,7 @@ client.on("ready", message => {
 
 help(client)
 all(client)
+member(client)
 
 join(client)
 left(client)
