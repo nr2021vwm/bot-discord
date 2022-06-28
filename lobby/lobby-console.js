@@ -1,5 +1,5 @@
 const { MessageEmbed } = require('discord.js');
-const channelId = process.env.console;
+const channelId = process.env.jlcl;
 
 module.exports = client => {
 
