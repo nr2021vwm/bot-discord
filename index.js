@@ -14,7 +14,7 @@ const ls = require('./lobby/lobby-console');
 client.on("ready", message => {
     console.log(`${client.user.tag} token login now`);
  client.user.setPresence({
-    status: 'idel',
+    status: process.env.status ,
     activity: {
         name: process.env.activity,
         type: process.env.acttype
