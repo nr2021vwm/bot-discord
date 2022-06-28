@@ -19,7 +19,7 @@ if (command === "link") {
  await time.delete({ timeout: 50000 })
 }
 
-if (command === "code creator"){
+if (command === "code_creator"){
  const embed = new MessageEmbed()
   .setColor('GREEN')
   .setTitle('code creator')
