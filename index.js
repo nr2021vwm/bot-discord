@@ -9,6 +9,9 @@ const all = require('./command/general/all');
  // role folder
 const member = require('./command/role/roles');
 
+ // voice folder
+const voice = require('./voice/Join_Left');
+
  // lobby folder
 const join = require('./lobby/join');
 const left = require('./lobby/left');
@@ -27,6 +30,8 @@ client.on("ready", message => {
 help(client)
 all(client)
 member(client)
+
+voice(client)
 
 join(client)
 left(client)
